@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- usuarios.component.html -->
+<div class="container" style="text-align: center">
+    <h2>Registro de Usuarios</h2>
+
+    <form>
+        <mat-form-field>
+            <mat-label>Nombre:</mat-label>
+            <input matInput type="text" id="nombre" name="nombre" required>
+        </mat-form-field>
+<br>
+        <mat-form-field>
+            <mat-label>Correo electrónico:</mat-label>
+            <input matInput type="email" id="correo" name="correo" required>
+        </mat-form-field>
+<br>
+        <mat-form-field>
+            <mat-label>Contraseña:</mat-label>
+            <input matInput type="password" id="contrasena" name="contrasena" required>
+        </mat-form-field>
+<br>
+        <!-- Botones -->
+        <button mat-raised-button color="primary">Registrarse</button>
+        <button mat-raised-button routerLink="/">Cancelar</button>
+    </form>
+</div>
+</body>
+</html>
